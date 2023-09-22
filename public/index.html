@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Country Information App</title>
+</head>
+<body>
+    <header>
+        <h1>Country Information</h1>
+        <div class="theme-toggle">
+            <label for="theme-switch">Dark Mode</label>
+            <input type="checkbox" id="theme-switch">
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <input type="text" id="search" placeholder="Search for a country">
+            <select id="region">
+                <option value="all">All Regions</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+        <div class="countries-list" id="countries-list">
+            <div class="country-card" data-country-name="Country1">
+            </div>
+            <div class="country-card" data-country-name="Country2">
+            </div>
+        </div>
+    </main>
+    <div id="root"></div>
+    <script src="script.js"></script>
+</body>
+</html>
